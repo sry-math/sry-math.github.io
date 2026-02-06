@@ -8,18 +8,27 @@ export default function Home() {
     <div className="container">
       {/* Hero Section */}
       <section className={styles.hero}>
-        <h1 className={styles.title}>
-          중·고등 수학 전문 강사<br />
-          <span style={{ color: "var(--accent)" }}>성락윤T</span>
-        </h1>
-        <p className={styles.subtitle}>
-          단순히 문제를 많이 풀게 하는 수업이 아니라,<br />
-          <strong>“왜 이렇게 푸는지”</strong>가 남는 수업을 지향합니다.<br />
-          중등 내신부터 고등 모의고사·수능까지, 하나의 흐름으로 연결해 지도합니다.
-        </p>
-        <div>
-          <Button href="/students" variant="primary">학생용 안내</Button>
-          <Button href="/parents" variant="secondary">학부모용 안내</Button>
+        <div className={styles.heroContent}>
+          <div className={styles.textContent}>
+            <h1 className={styles.title}>
+              중·고등 수학 전문 강사<br />
+              <span style={{ color: "var(--accent)" }}>성락윤T</span>
+            </h1>
+            <p className={styles.subtitle}>
+              단순히 문제를 많이 풀게 하는 수업이 아니라,<br />
+              <strong>“왜 이렇게 푸는지”</strong>가 남는 수업을 지향합니다.<br />
+              중등 내신부터 고등 모의고사·수능까지, 하나의 흐름으로 연결해 지도합니다.
+            </p>
+            <div>
+              <Button href="/students" variant="primary">학생용 안내</Button>
+              <Button href="/parents" variant="secondary">학부모용 안내</Button>
+            </div>
+          </div>
+          <img
+            src="/main_image.jpg"
+            alt="성락윤 선생님 프로필"
+            className={styles.profileImage}
+          />
         </div>
       </section>
 
@@ -61,7 +70,7 @@ export default function Home() {
           <div className={styles.card} style={{ textAlign: "left", display: "inline-block", minWidth: "300px", maxWidth: "100%" }}>
             <p className={styles.cardDesc}>
               <strong>연락처:</strong> 010-4801-9581<br />
-              <strong>이메일:</strong> contact@example.com<br />
+              <strong>이메일:</strong> fkrdbszz@naver.com <br />
               <strong>상담 가능 시간:</strong> 평일 14:00 - 22:00
             </p>
           </div>
