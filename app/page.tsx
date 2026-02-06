@@ -67,15 +67,23 @@ export default function Home() {
             학생의 현재 상황과 목표, 학교 내신 난이도 등을 기준으로<br />
             수업 방향이 맞을지, 어떤 계획이 현실적인지 함께 이야기합니다.
           </p>
-          <div className={styles.card} style={{ textAlign: "left", display: "inline-block", minWidth: "300px", maxWidth: "100%" }}>
-            <p className={styles.cardDesc}>
-              <strong>연락처:</strong> 010-4801-9581<br />
-              <strong>이메일:</strong> fkrdbszz@naver.com <br />
-              <strong>상담 가능 시간:</strong> 평일 14:00 - 22:00
-            </p>
-          </div>
+          <p className={styles.cardDesc}>
+            <strong>연락처:</strong> 010-4801-9581<br />
+            <strong>이메일:</strong> fkrdbszz@naver.com <br />
+            <strong>상담 가능 시간:</strong> 평일 14:00 - 22:00
+          </p>
         </div>
-      </Section>
-    </div>
+        <div style={{ marginTop: '2rem' }}>
+          <a
+            href="https://calendly.com/wkfwktka/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.ctaButton}
+          >
+            📅 상담/보강 예약하기
+          </a>
+        </div>
+      </Section >
+    </div >
   );
 }

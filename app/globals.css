@@ -150,3 +150,16 @@ a:hover {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* Hide Calendly Scrollbars */
+iframe[src*="calendly.com"] {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+iframe[src*="calendly.com"]::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari */
+}
