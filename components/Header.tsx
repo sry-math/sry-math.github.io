@@ -36,7 +36,7 @@ export const Header = () => {
         <header className="header">
             <div className="container header-inner">
                 <div className="logo">
-                    <Link href="/">Smook Math</Link>
+                    <Link href="/">SRY Math</Link>
                 </div>
 
                 {/* Desktop Navigation */}
