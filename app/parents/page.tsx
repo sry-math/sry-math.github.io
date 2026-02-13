@@ -41,7 +41,7 @@ export default function ParentsPage() {
                     <li className={styles.listItem}>부모님에게 숨기는 거짓된 모습을 보여드리지 않습니다.</li>
                 </ul>
                 <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <a href="/#contact" className={styles.ctaButton}>상담 / 문의로 가기</a>
+                    <a href="/contact" className={styles.ctaButton}>상담 / 문의로 가기</a>
                 </div>
             </Section>
         </div>

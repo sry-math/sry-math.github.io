@@ -89,7 +89,7 @@ export default function PortfolioPage() {
                         수업을 보고 문의 사항이 있으시다면<br />
                         언제든 편하게 연락주시면 감사하겠습니다.
                     </p>
-                    <Button href="/#contact" variant="primary">
+                    <Button href="/contact" variant="primary">
                         상담 / 문의하기
                     </Button>
                 </div>

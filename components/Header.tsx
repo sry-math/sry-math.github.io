@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import styles from '../app/page.module.css';
 
@@ -16,11 +17,12 @@ const navLinks: NavLink[] = [
     { href: '/parents', label: '학부모용 안내' },
     { href: '/portfolio', label: '포트폴리오' },
     // { href: '/schedule', label: '보강 예약' },
-    { href: '/#contact', label: '상담 문의' },
+    { href: '/contact', label: '상담 문의' },
 ];
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     // Close menu when route changes or screen resizes
     useEffect(() => {
@@ -43,7 +45,11 @@ export const Header = () => {
                 {/* Desktop Navigation */}
                 <nav className="nav-links desktop-nav">
                     {navLinks.map((link) => (
-                        <Link key={link.href} href={link.href}>
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={pathname === link.href ? 'active' : ''}
+                        >
                             {link.label}
                         </Link>
                     ))}
@@ -66,6 +72,7 @@ export const Header = () => {
                                 key={link.href}
                                 href={link.href}
                                 onClick={() => setIsOpen(false)}
+                                className={pathname === link.href ? 'active' : ''}
                             >
                                 {link.label}
                             </Link>
