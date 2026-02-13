@@ -15,28 +15,15 @@ This is a modern, responsive portfolio website built with Next.js and ready for 
     ```
     Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## Deployment to GitHub Pages
+## Deployment
 
-This project is configured to deploy automatically to GitHub Pages using GitHub Actions.
+To deploy the application to GitHub Pages, run:
 
-### Steps to Deploy:
+```bash
+npm run deploy
+```
 
-1.  **Push to GitHub**:
-    Initialize a git repository if you haven't already, commit your changes, and push to a new GitHub repository.
-    ```bash
-    git init
-    git add .
-    git commit -m "Initial commit"
-    git branch -M main
-    git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-    git push -u origin main
-    ```
-
-2.  **Configure GitHub Settings**:
-    - Go to your repository on GitHub.
-    - Click on **Settings** > **Pages**.
-    - Under **Build and deployment** > **Source**, select **GitHub Actions**.
-    - The deployment workflow will automatically run on your next push.
+This command builds the project and pushes the output to the `gh-pages` branch.
 
 ## Customization
 
