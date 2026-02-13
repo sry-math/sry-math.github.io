@@ -30,9 +30,9 @@ export default function PortfolioPage() {
                         </div>
                         <div style={{ padding: '1.5rem' }}>
                             <h3 className={styles.cardTitle}>2026 1학기 소개영상 성락윤</h3>
-                            <p className={styles.cardDesc}>
+                            {/* <p className={styles.cardDesc}>
                                 대수 및 미적분1에 대한 전반적인 설명과 수업 방식에 대한 안내 영상입니다.
-                            </p>
+                            </p> */}
                         </div>
                     </Card>
 
