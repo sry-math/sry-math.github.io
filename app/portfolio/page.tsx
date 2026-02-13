@@ -21,7 +21,7 @@ export default function PortfolioPage() {
                         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
                             <iframe
                                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                                src="https://www.youtube.com/embed/YTPvc2hJcMw"
+                                src="https://www.youtube.com/embed/flyhNzVpsSQ"
                                 title="김현정수학학원 2026 겨울학기 OT 및 맛보기 영상 (대수 & 미적분1)"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -29,7 +29,7 @@ export default function PortfolioPage() {
                             ></iframe>
                         </div>
                         <div style={{ padding: '1.5rem' }}>
-                            <h3 className={styles.cardTitle}>김현정수학학원 2026 겨울학기 OT 및 맛보기 영상 (대수 & 미적분1)</h3>
+                            <h3 className={styles.cardTitle}>2026 1학기 소개영상 성락윤</h3>
                             <p className={styles.cardDesc}>
                                 대수 및 미적분1에 대한 전반적인 설명과 수업 방식에 대한 안내 영상입니다.
                             </p>

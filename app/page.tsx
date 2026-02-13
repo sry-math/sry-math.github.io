@@ -11,13 +11,14 @@ export default function Home() {
         <div className={styles.heroContent}>
           <div className={styles.textContent}>
             <h1 className={styles.title}>
-              중·고등 수학 전문 강사<br />
+              고등 수학 전문 강사<br />
               <span style={{ color: "var(--accent)" }}>성락윤T</span>
             </h1>
             <p className={styles.subtitle}>
-              단순히 문제를 많이 풀게 하는 수업이 아니라,<br />
-              <strong>“왜 이렇게 푸는지”</strong>가 남는 수업을 지향합니다.<br />
-              중등 내신부터 고등 모의고사·수능까지, 하나의 흐름으로 연결해 지도합니다.
+              학생의 가능성은 타고나는 것이 아니라 설계됩니다.<br />
+              개인별 학습 성향을 분석해 가장 <strong>효율적인 전략</strong>을 제시합니다.<br />
+              고등 전 과정을 아우르는 <strong>실전 중심 수업</strong>으로 <br />
+              고3 수능까지 완성합니다.
             </p>
             <div>
               <Button href="/students" variant="primary">학생용 안내</Button>
@@ -33,30 +34,33 @@ export default function Home() {
       </section>
 
       {/* Philosophy Section */}
-      <Section title="성락윤T 수업의 3가지 철학">
+      <Section title="성락윤T 수업의 3가지 차별점">
         <div className={styles.grid}>
           <Card
-            title="구조가 보이는 개념"
-            description="공식 암기가 아니라, “왜 이런 식이 나오는지”를 그림·상황과 함께 설명합니다."
+            title="학생별 맞춤 전략 제시"
+            description="학생마다 다른 학습 성향과 약점을 정확히 진단합니다.
+                        획일적인 방식이 아닌, 각 학생에게 가장 효율적인 방향을 제시합니다."
           />
           <Card
             title="연결되는 유형 훈련"
-            description="비슷한 구조의 문제를 묶어서 “이 문제와 저 문제가 어떻게 같은지”를 보게 합니다."
+            description="틀린 문제는 실수가 아니라 데이터입니다.
+                        오답의 원인을 구조적으로 분석해 같은 실수가 반복되지 않도록 관리합니다."
           />
           <Card
             title="데이터 기반 피드백"
-            description="학생별 오답·실수 유형을 기록하고, 다음 수업과 과제에 그대로 반영합니다."
+            description="부분 관리가 아닌 전 과정 관리.
+                        고등 전 범위를 직접 지도하며 수능 완성까지 이끕니다."
           />
         </div>
       </Section>
 
       {/* Methodology Section */}
-      <Section id="methodology" title="이런 흐름으로 수업합니다" background="alt">
+      <Section id="methodology" title="수학은 단순한 암기가 아닙니다" background="alt">
         <ul className={styles.list}>
-          <li className={styles.listItem}>개념을 구조로 정리하고, 예제를 통해 바로 적용합니다.</li>
-          <li className={styles.listItem}>학교·기출 문제를 유형별로 묶어 사고 과정을 훈련합니다.</li>
-          <li className={styles.listItem}>시험 전에는 실제 난이도에 맞춘 실전 모의·내신 대비를 합니다.</li>
-          <li className={styles.listItem}>오답 데이터와 실수를 기록해 다음 수업에 반영합니다.</li>
+          <li className={styles.listItem}>개념을 이해하고, 실전에 적용합니다.</li>
+          <li className={styles.listItem}>생긴 오답을 체계적으로 검토하며, 교정합니다.</li>
+          <li className={styles.listItem}>실전에서 생길 수 있는 문제점들까지 보완합니다.</li>
+          <li className={styles.listItem}>내신과 수능 모두 좋은 성과를 도출합니다.</li>
         </ul>
       </Section>
 
@@ -64,24 +68,26 @@ export default function Home() {
       <Section id="contact" title="상담 / 문의">
         <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto" }}>
           <p className={styles.subtitle}>
-            학생의 현재 상황과 목표, 학교 내신 난이도 등을 기준으로<br />
-            수업 방향이 맞을지, 어떤 계획이 현실적인지 함께 이야기합니다.
+            학생의 등급이 낮아도 괜찮습니다. <br />
+            배울 의지가 있다면, 또는 간단한 고민만 있으시더라도 <br />
+            연락주시면 감사하겠습니다.
           </p>
           <p className={styles.cardDesc}>
-            <strong>연락처:</strong> 010-4801-9581<br />
-            <strong>이메일:</strong> fkrdbszz@naver.com <br />
-            <strong>상담 가능 시간:</strong> 평일 14:00 - 22:00
+            <strong>학원 연락처</strong> : 02-562-5050<br />
+            <strong>강사 연락처:</strong> 010-4801-9581<br />
+            <strong>상담 가능 시간</strong><br />
+            <strong>(강사)</strong> 평일 17:00 이전, 22:00 이후 / 토요일 13:30 이후 / 일요일 무관<br />
+            <strong>(학원)</strong> 평일 13:00 이후 22:30 이전 / 토요일 09:00 이후 18:00 이전 / 일요일 휴무
           </p>
-        </div>
-        <div style={{ marginTop: '2rem' }}>
-          <a
+          {/* <a
             href="https://calendly.com/wkfwktka/30min"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}
+            style={{ marginTop: '2rem' }}
           >
             📅 상담/보강 예약하기
-          </a>
+          </a> */}
         </div>
       </Section >
     </div >

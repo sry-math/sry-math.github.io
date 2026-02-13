@@ -9,7 +9,7 @@ export const Footer = () => {
             borderTop: "1px solid var(--border)",
             marginTop: "2rem"
         }}>
-            <p>&copy; {new Date().getFullYear()} 성락윤T. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} 성락윤T</p>
         </footer>
     );
 };

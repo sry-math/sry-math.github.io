@@ -20,7 +20,7 @@ export default function SchedulePage() {
 
     return (
         <div className="container" id="root">
-            <section className={styles.hero} style={{ minHeight: '40vh' }}>
+            {/* <section className={styles.hero} style={{ minHeight: '40vh' }}>
                 <h1 className={styles.title}>보강 예약 및 수업 일정</h1>
                 <p className={styles.subtitle}>
                     현재 수업 일정을 확인하고, 원하시는 시간에 보강을 예약하세요.<br />
@@ -54,7 +54,7 @@ export default function SchedulePage() {
                         </div>
                     )}
                 </div>
-            </section>
+            </section> */}
 
             <Section title="수업 일정표">
                 <div style={{ background: '#fff', padding: '2rem', borderRadius: '12px', border: '1px solid var(--border)' }}>
