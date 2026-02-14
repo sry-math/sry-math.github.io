@@ -5,7 +5,7 @@ import { Section } from '@/components/Section';
 export const ContactSection = () => {
     return (
         <Section id="contact" title="상담 / 문의">
-            <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto" }}>
+            <div className={styles.glassContainer} style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
                 <p className={styles.subtitle}>
                     학생의 등급이 낮아도 괜찮습니다. <br />
                     학생이 나아가야 할 방향에 대해 상담 드리겠습니다. <br />
@@ -31,6 +31,7 @@ export const ContactSection = () => {
             📅 상담/보강 예약하기
           </a> */}
             </div>
+
         </Section>
     );
 };

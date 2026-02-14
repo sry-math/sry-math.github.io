@@ -2,6 +2,7 @@ import styles from "../page.module.css";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
+import { YouTubeVideo } from "@/components/YouTubeVideo";
 
 export default function PortfolioPage() {
     return (
@@ -18,16 +19,10 @@ export default function PortfolioPage() {
 
                     {/* Video 1 */}
                     <Card title="Video1" className="!p-0 overflow-hidden">
-                        <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                            <iframe
-                                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                                src="https://www.youtube.com/embed/flyhNzVpsSQ"
-                                title="김현정수학학원 2026 겨울학기 OT 및 맛보기 영상 (대수 & 미적분1)"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
+                        <YouTubeVideo
+                            videoId="flyhNzVpsSQ"
+                            title="김현정수학학원 2026 겨울학기 OT 및 맛보기 영상 (대수 & 미적분1)"
+                        />
                         <div style={{ padding: '1.5rem' }}>
                             <h3 className={styles.cardTitle}>2026 1학기 소개영상 성락윤</h3>
                             {/* <p className={styles.cardDesc}>

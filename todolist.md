@@ -14,4 +14,6 @@
 - [x] Hero 섹션 애니메이션 구현 (Hero Animation Implementation)
     - [x] `framer-motion` 설치 및 설정
     - [x] Hero 컴포넌트 분리 및 애니메이션 적용
+    - [x] 배경 흐림 효과 및 텍스트 동적 등장 애니메이션 추가
+
 

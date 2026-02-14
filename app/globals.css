@@ -1,5 +1,6 @@
 :root {
-  --background: #ffffff;
+  /* --background: #ffffff; */
+  --background: transparent;
   --foreground: #1a1a1a;
   --primary: #0f172a;
   /* Slate 900 */
