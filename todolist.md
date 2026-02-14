@@ -11,3 +11,7 @@
     - [ ] YouTube Data API 키 발급 및 설정
     - [ ] 영상 제목/설명 자동 가져오기 기능 구현
 - [ ] 최종 배포 및 확인 (Verify)
+- [x] Hero 섹션 애니메이션 구현 (Hero Animation Implementation)
+    - [x] `framer-motion` 설치 및 설정
+    - [x] Hero 컴포넌트 분리 및 애니메이션 적용
+

@@ -3,36 +3,14 @@ import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
 import { ContactSection } from "@/components/ContactSection";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
   return (
     <div className="container">
       {/* Hero Section */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <div className={styles.textContent}>
-            <h1 className={styles.title}>
-              고등 수학 전문 강사<br />
-              <span style={{ color: "var(--accent)" }}>성락윤T</span>
-            </h1>
-            <p className={styles.subtitle}>
-              학생의 가능성은 타고나는 것이 아니라 설계됩니다.<br />
-              개인별 학습 성향을 분석해 가장 <strong>효율적인 전략</strong>을 제시합니다.<br />
-              고등 전 과정을 아우르는 <strong>실전 중심 수업</strong>으로 <br />
-              고3 수능까지 완성합니다.
-            </p>
-            <div>
-              <Button href="/students" variant="primary">학생용 안내</Button>
-              <Button href="/parents" variant="secondary">학부모용 안내</Button>
-            </div>
-          </div>
-          <img
-            src="/main_image.jpg"
-            alt="성락윤 선생님 프로필"
-            className={styles.profileImage}
-          />
-        </div>
-      </section>
+      <Hero />
+
 
       {/* Philosophy Section */}
       <Section title="성락윤T 수업의 3가지 차별점">
