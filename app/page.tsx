@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
+import { StrategyCard } from "@/components/StrategyCard";
 import { Button } from "@/components/Button";
 import { ContactSection } from "@/components/ContactSection";
 import { Hero } from "@/components/Hero";
@@ -32,11 +33,7 @@ export default function Home() {
         <ScrollReveal>
           <Section title="성락윤T 수업의 3가지 차별점">
             <div className={styles.grid}>
-              <Card
-                title="학생별 맞춤 전략 제시"
-                description="학생마다 다른 학습 성향과 약점을 정확히 진단합니다.
-                          획일적인 방식이 아닌, 각 학생에게 가장 효율적인 방향을 제시합니다."
-              />
+              <StrategyCard />
               <Card
                 title="연결되는 유형 훈련"
                 description="틀린 문제는 실수가 아니라 데이터입니다.
