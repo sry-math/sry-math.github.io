@@ -15,7 +15,7 @@ const navLinks: NavLink[] = [
     { href: '/', label: '홈' },
     { href: '/students', label: '학생용 안내' },
     { href: '/parents', label: '학부모용 안내' },
-    { href: '/portfolio', label: '포트폴리오' },
+    { href: '/portfolio', label: '수업 영상 및 후기' },
     // { href: '/schedule', label: '보강 예약' },
     { href: '/contact', label: '상담 문의' },
 ];
