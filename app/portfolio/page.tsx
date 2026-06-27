@@ -2,7 +2,23 @@ import styles from "../page.module.css";
 import { Section } from "@/components/Section";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
-import { YouTubeVideo } from "@/components/YouTubeVideo";
+import { VideoGallery } from "@/components/VideoGallery";
+
+const VIDEOS_OJT = [
+    { videoId: "kz6Tnw5tqCU", title: "2026 여름학기 2학기 OT" },
+];
+
+const VIDEOS_REGULAR = [
+    { videoId: "EW2qQEo7zHk", title: "2026년 고1 2학기" },
+    { videoId: "YeeWhmQEsnI", title: "2026년 고2 2학기" },
+];
+
+const VIDEOS_SPECIAL = [
+    { videoId: "51f4zeJLCas", title: "대수 특강" },
+    { videoId: "mA7W2xXGctw", title: "미적분1 특강" },
+    { videoId: "eBFgn3dnjek", title: "기하 특강" },
+    { videoId: "Gz8rFaBgWJM", title: "확률과 통계 특강" },
+];
 
 const TESTIMONIALS = [
     {
@@ -113,42 +129,19 @@ export default function PortfolioPage() {
             </section>
 
             <Section title="고등부 수업 영상">
-                <div className={styles.grid} style={{ maxWidth: '1200px' }}>
-
-                    {/* Video 1 */}
-                    <Card title="Video1" className="!p-0 overflow-hidden">
-                        <YouTubeVideo
-                            videoId="flyhNzVpsSQ"
-                            title="김현정수학학원 2026 겨울학기 OT 및 맛보기 영상 (대수 & 미적분1)"
-                        />
-                        <div style={{ padding: '1.5rem' }}>
-                            <h3 className={styles.cardTitle}>2026 1학기 소개영상 성락윤</h3>
-                            {/* <p className={styles.cardDesc}>
-                                대수 및 미적분1에 대한 전반적인 설명과 수업 방식에 대한 안내 영상입니다.
-                            </p> */}
-                        </div>
-                    </Card>
-
-                    {/* Video 2 */}
-                    {/* <Card title="Video2" className="!p-0 overflow-hidden">
-                        <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                            <iframe
-                                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                                src="https://www.youtube.com/embed/9C-NCcWhbK8"
-                                title="고1 B3반 수업 영상"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                            ></iframe>
-                        </div>
-                        <div style={{ padding: '1.5rem' }}>
-                            <h3 className={styles.cardTitle}>고1 B3반 수업 영상</h3>
-                            <p className={styles.cardDesc}>
-                                "기초부터 심화까지 너도 할 수 있어"
-                            </p>
-                        </div>
-                    </Card> */}
-
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4.5rem' }}>
+                    <div>
+                        <h3 className={styles.videoGroupTitle}>OT</h3>
+                        <VideoGallery videos={VIDEOS_OJT} />
+                    </div>
+                    <div>
+                        <h3 className={styles.videoGroupTitle}>정규</h3>
+                        <VideoGallery videos={VIDEOS_REGULAR} />
+                    </div>
+                    <div>
+                        <h3 className={styles.videoGroupTitle}>특강</h3>
+                        <VideoGallery videos={VIDEOS_SPECIAL} />
+                    </div>
                 </div>
             </Section>
 

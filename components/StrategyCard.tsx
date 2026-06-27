@@ -1,12 +1,18 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Card } from './Card';
 import styles from '../app/page.module.css';
 import { X } from 'lucide-react';
 
 export const StrategyCard = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     useEffect(() => {
         if (isModalOpen) {
@@ -59,7 +65,7 @@ export const StrategyCard = () => {
                 </div>
             </Card>
 
-            {isModalOpen && (
+            {mounted && isModalOpen && createPortal(
                 <div className={styles.modalOverlay} onClick={closeModal}>
                     <div
                         className={styles.modalContent}
@@ -153,7 +159,8 @@ export const StrategyCard = () => {
 
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </>
     );

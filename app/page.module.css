@@ -298,3 +298,344 @@
 
   margin-bottom: 3rem;
 }
+
+/* ===== Methodology Section (코치 소개 스타일 · 이미지 우측) ===== */
+.methodLayout {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 4.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.methodImageWrap {
+  flex: 0 0 44%;
+}
+
+.methodImage {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+.methodText {
+  flex: 1;
+}
+
+.methodEyebrow {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.methodTitle {
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.35;
+  margin: 0 0 1.5rem;
+  word-break: keep-all;
+}
+
+.methodLead {
+  font-family: var(--font-serif), Georgia, serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--secondary);
+  margin: 0 0 2.5rem;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.methodList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.methodItem {
+  display: flex;
+  gap: 0.85rem;
+  font-size: 1.12rem;
+  color: #334155;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.methodNum {
+  font-family: var(--font-serif), Georgia, serif;
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .methodLayout {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .methodImageWrap {
+    flex: none;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+/* ===== Difference Section (좌측 사진 / 우측 슬라이드인 카드) ===== */
+.diffLayout {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.diffImageWrap {
+  flex: 0 0 40%;
+  position: sticky;
+  top: 100px;
+}
+
+.diffImage {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 0;
+  box-shadow: 0 24px 50px -20px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.diffCards {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .diffLayout {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .diffImageWrap {
+    flex: none;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    position: static;
+  }
+}
+
+/* ===== Profile Parallax Section ===== */
+.profileBand {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.profileBandDark {
+  background: #0f172a;
+}
+
+.profileBandLight {
+  background: #f5f1ea;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem;
+}
+
+.profileReverse {
+  flex-direction: row-reverse;
+}
+
+.profileImageWrap {
+  flex: 0 0 42%;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.35);
+}
+
+.profileSectionImg {
+  width: 100%;
+  height: 140%;
+  margin-top: -20%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.profileText {
+  flex: 1;
+}
+
+.profileEyebrow {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.profileTitle {
+  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+  font-weight: 800;
+  margin: 0 0 1.5rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+}
+
+.profileBody {
+  font-size: 1.12rem;
+  line-height: 1.85;
+  word-break: keep-all;
+}
+
+/* 테마별 텍스트 색 */
+.profileBandDark .profileEyebrow {
+  color: #60a5fa;
+}
+.profileBandDark .profileTitle {
+  color: #ffffff;
+}
+.profileBandDark .profileBody {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.profileBandLight .profileEyebrow {
+  color: var(--accent);
+}
+.profileBandLight .profileTitle {
+  color: var(--primary);
+}
+.profileBandLight .profileBody {
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .profileSection,
+  .profileReverse {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+
+  .profileImageWrap {
+    flex: none;
+    width: 100%;
+    max-width: 340px;
+  }
+}
+
+.videoGroupTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.75rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 0.5rem;
+}
+
+.videoGroupTitle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+/* ===== Video Carousel (Apple TV+ style) ===== */
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  /* 첫/마지막 카드도 화면 중앙에 오도록 좌우 여백을 카드 양옆 peek 만큼 확보 */
+  padding-left: max(1.5rem, calc((100% - 940px) / 2));
+  padding-right: max(1.5rem, calc((100% - 940px) / 2));
+  /* 좌우 화살표가 카드 트랙 바깥에 놓이도록 트랙 양옆 공간 확보 */
+  margin: 0 60px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  width: min(82%, 940px);
+  scroll-snap-align: center;
+  cursor: pointer;
+}
+
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.carouselArrow:hover {
+  background: rgba(0, 0, 0, 0.06);
+  color: #000;
+  transform: translateY(-50%) scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    margin: 0;
+  }
+  .carouselItem {
+    width: 90%;
+  }
+  .carouselArrow {
+    display: none;
+  }
+}

@@ -1,12 +1,12 @@
 import styles from "./page.module.css";
 import { Section } from "@/components/Section";
-import { Card } from "@/components/Card";
-import { StrategyCard } from "@/components/StrategyCard";
-import { Button } from "@/components/Button";
 import { ContactSection } from "@/components/ContactSection";
 import { Hero } from "@/components/Hero";
 import { MainBackground } from "@/components/MainBackground";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { ProfileSection } from "@/components/ProfileSection";
+import { DifferenceSection } from "@/components/DifferenceSection";
+import { MethodologySection } from "@/components/MethodologySection";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
 
 export default function Home() {
@@ -15,6 +15,20 @@ export default function Home() {
       <MainBackground />
       <Hero />
 
+      {/* Profile Parallax Sections */}
+      <ProfileSection
+        image="/main_image2.jpg"
+        eyebrow="책임 교육"
+        title="고3 수능까지, 끝까지 함께 책임집니다"
+        body="학년이 바뀌거나 입시가 가까워졌다는 이유로 교육의 책임을 다른 곳으로 넘기지 않습니다. 한 학원의 고등부를 전담하며, 고3까지 학생의 성장을 함께 책임집니다."
+      />
+      <ProfileSection
+        image="/main_image3.jpg"
+        eyebrow="수업 철학"
+        title="보여주기보다, 실제 수업과 결과로"
+        body="빠른 성적 향상만을 약속하지 않습니다. 느리더라도 흔들리지 않는 실력, 시험이 바뀌어도 통하는 본질적인 수학 실력을 만드는 수업을 지향합니다."
+      />
+
       <div className="container">
 
         {/* Video Section */}
@@ -22,46 +36,22 @@ export default function Home() {
           <Section title="수업 미리보기">
             <div style={{ maxWidth: '800px', margin: '0 auto' }}>
               <YouTubeVideo
-                videoId="flyhNzVpsSQ"
-                title="김현정수학학원 2026 겨울학기 OT 및 맛보기 영상 (대수 & 미적분1)"
+                videoId="kz6Tnw5tqCU"
+                title="2026 여름학기 2학기 OT"
               />
             </div>
           </Section>
         </ScrollReveal>
 
-        {/* Philosophy Section */}
-        <ScrollReveal>
-          <Section title="성락윤T 수업의 3가지 차별점">
-            <div className={styles.grid}>
-              <StrategyCard />
-              <Card
-                title="연결되는 유형 훈련"
-                description="틀린 문제는 실수가 아니라 데이터입니다.
-                          오답의 원인을 구조적으로 분석해 같은 실수가 반복되지 않도록 관리합니다."
-              />
-              <Card
-                title="데이터 기반 피드백"
-                description="부분 관리가 아닌 전 과정 관리.
-                          고등 전 범위를 직접 지도하며 수능 완성까지 이끕니다."
-              />
-            </div>
-          </Section>
-        </ScrollReveal>
+      </div>
 
-        {/* Methodology Section */}
-        <ScrollReveal>
-          <Section id="methodology" title="수학은 단순한 암기가 아닙니다">
-            <div className={styles.glassContainer}>
-              <ul className={styles.list}>
-                <li className={styles.listItem}>개념을 이해하고, 실전에 적용합니다.</li>
-                <li className={styles.listItem}>생긴 오답을 체계적으로 검토하며, 교정합니다.</li>
-                <li className={styles.listItem}>실전에서 생길 수 있는 문제점들까지 보완합니다.</li>
-                <li className={styles.listItem}>내신과 수능 모두 좋은 성과를 도출합니다.</li>
-              </ul>
-            </div>
-          </Section>
+      {/* Philosophy Section - 좌측 사진 / 우측 슬라이드인 카드 */}
+      <DifferenceSection />
 
-        </ScrollReveal>
+      {/* Methodology Section - 코치 소개 스타일 (이미지 우측) */}
+      <MethodologySection />
+
+      <div className="container">
 
         {/* Contact Section */}
         <ScrollReveal>

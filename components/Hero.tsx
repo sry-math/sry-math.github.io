@@ -14,8 +14,8 @@ const contentVariants: Variants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.1,
-            delayChildren: 0.5, // Wait for background to start blurring
+            staggerChildren: 0.06,
+            delayChildren: 0.15, // Wait for background to start blurring
         },
     },
 };
@@ -96,7 +96,7 @@ export function Hero() {
         // We want content to appear as blur starts.
         const timer = setTimeout(() => {
             contentControls.start("visible");
-        }, 2200);
+        }, 350);
 
         return () => clearTimeout(timer);
     }, [contentControls]);

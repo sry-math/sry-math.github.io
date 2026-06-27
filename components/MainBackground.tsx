@@ -14,7 +14,7 @@ const backgroundVariants: Variants = {
         scale: 1,
         filter: "blur(0px) brightness(1)",
         transition: {
-            duration: 1.5,
+            duration: 0.5,
             ease: "easeOut",
         },
     },
@@ -23,7 +23,7 @@ const backgroundVariants: Variants = {
         scale: 1.05,
         filter: "blur(10px) brightness(0.7)",
         transition: {
-            duration: 1.5,
+            duration: 0.5,
             ease: "easeInOut",
         },
     },
