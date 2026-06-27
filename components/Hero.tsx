@@ -130,7 +130,7 @@ export function Hero() {
 
                 <div className={styles.textContent}>
                     <div className={styles.title} style={{ overflow: "hidden" }}>
-                        <AnimatedText text="고등 수학 전문 강사" />
+                        <AnimatedText text="김현정 수학학원 고등부 총괄 팀장" />
                         <br />
                         <motion.span
                             style={{ display: "inline-block", color: "var(--accent)" }}

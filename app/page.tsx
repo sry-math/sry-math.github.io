@@ -7,6 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ProfileSection } from "@/components/ProfileSection";
 import { DifferenceSection } from "@/components/DifferenceSection";
 import { MethodologySection } from "@/components/MethodologySection";
+import { ScheduleTable } from "@/components/ScheduleTable";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
 
 export default function Home() {
@@ -52,6 +53,13 @@ export default function Home() {
       <MethodologySection />
 
       <div className="container">
+
+        {/* Schedule Section */}
+        <ScrollReveal>
+          <Section title="현재 수업 시간표">
+            <ScheduleTable />
+          </Section>
+        </ScrollReveal>
 
         {/* Contact Section */}
         <ScrollReveal>

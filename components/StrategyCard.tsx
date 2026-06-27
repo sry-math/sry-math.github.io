@@ -77,7 +77,7 @@ export const StrategyCard = () => {
                         </button>
 
                         <div style={{
-                            padding: '2rem 2rem 1rem 4rem',
+                            padding: '2rem 4rem 1rem 2rem',
                             background: 'white',
                             borderBottom: '1px solid var(--border)',
                             position: 'sticky',
@@ -91,7 +91,7 @@ export const StrategyCard = () => {
                             </p>
                         </div>
 
-                        <div style={{ padding: '2rem', overflowY: 'auto', flexGrow: 1, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                        <div style={{ padding: '2rem', overflowY: 'auto', flexGrow: 1, minHeight: 0, display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                             {/* Case 1 */}
                             <div style={{ background: 'white', padding: '1.5rem', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
                                 <h3 style={{ color: 'var(--accent)', fontSize: '1.2rem', fontWeight: 'bold', marginBottom: '1rem' }}>Case 1: 기본기를 놓친 고득점자형</h3>
