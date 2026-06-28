@@ -11,6 +11,7 @@ const VIDEOS_OJT = [
 const VIDEOS_REGULAR = [
     { videoId: "EW2qQEo7zHk", title: "2026년 고1 2학기" },
     { videoId: "YeeWhmQEsnI", title: "2026년 고2 2학기" },
+    { videoId: "T9BUoVroVN8", title: "2026년 고3 2학기" },
 ];
 
 const VIDEOS_SPECIAL = [
