@@ -78,9 +78,7 @@ export const ModalCard = ({ title, description, modalTitle, modalBody, footnote,
                                 padding: '2rem 4rem 1.5rem 2rem',
                                 background: 'white',
                                 borderBottom: '1px solid var(--border)',
-                                position: 'sticky',
-                                top: 0,
-                                zIndex: 1,
+                                flexShrink: 0,
                             }}
                         >
                             <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', fontWeight: 'bold' }}>{modalTitle}</h2>
