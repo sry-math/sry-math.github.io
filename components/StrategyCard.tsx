@@ -80,9 +80,7 @@ export const StrategyCard = () => {
                             padding: '2rem 4rem 1rem 2rem',
                             background: 'white',
                             borderBottom: '1px solid var(--border)',
-                            position: 'sticky',
-                            top: 0,
-                            zIndex: 1
+                            flexShrink: 0
                         }}>
                             <h2 style={{ fontSize: '1.5rem', color: 'var(--primary)', fontWeight: 'bold' }}>학생별 맞춤 지도 실제 사례</h2>
                             <p style={{ color: 'var(--secondary)', marginTop: '0.5rem', lineHeight: '1.5' }}>
