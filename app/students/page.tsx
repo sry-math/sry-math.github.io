@@ -12,6 +12,9 @@ export default function StudentsPage() {
                     한 페이지에 담길 수 없는 많은 이야기가 있지만, <br />
                     모쪼록 학생 여러분이 읽어보시고 이해 될 수 있도록 작성하였습니다.
                 </p>
+                <div style={{ marginTop: '2rem' }}>
+                    <a href="/portfolio" className={styles.ctaButton}>수업 영상 및 후기 보기</a>
+                </div>
             </section>
 
             <Section title="수업 방식">

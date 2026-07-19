@@ -11,6 +11,9 @@ export default function ParentsPage() {
                     자녀의 공부가 걱정되시는 부모님들께서 이해하실 수 있도록 친절히 작성하였습니다. <br />
                     궁금하신 부분은 언제든 편하게 문의주시면 감사하겠습니다.
                 </p>
+                <div style={{ marginTop: '2rem' }}>
+                    <a href="/portfolio" className={styles.ctaButton}>수업 영상 및 후기 보기</a>
+                </div>
             </section>
 
             <Section title="수업 철학">
