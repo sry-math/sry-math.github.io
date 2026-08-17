@@ -137,7 +137,7 @@ export const StrategyCard = () => {
                                     <li style={{ display: 'flex', gap: '0.5rem' }}><strong style={{ minWidth: '45px', color: '#64748b' }}>분석:</strong> <span style={{ lineHeight: '1.5' }}>아이 스스로 할 수 있다고 믿어주면 오히려 회피하거나 혼나는 일 연속.</span></li>
                                     <li style={{ display: 'flex', gap: '0.5rem' }}><strong style={{ minWidth: '45px', color: '#64748b' }}>해결:</strong> <span style={{ lineHeight: '1.5' }}>대다수 문항 끝낼 때까지 하원 보류 (강한 관리).</span></li>
                                     <li style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem', padding: '0.5rem 0.8rem', background: '#f0fdf4', borderRadius: '6px', color: '#166534', fontWeight: 'bold' }}>
-                                        <span>결과: 6등급 ➔ 2달 만에 수1 2등급 / 확통 2등급 상승</span>
+                                        <span>결과: 6등급 ➔ 2달 만에 수1 2등급 / 확통 2등급 달성</span>
                                     </li>
                                 </ul>
                             </div>

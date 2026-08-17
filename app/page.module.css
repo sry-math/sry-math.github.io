@@ -142,6 +142,42 @@
 }
 
 
+/* 카카오톡 상담 버튼 */
+.kakaoButton {
+  background: #FEE500;
+  color: #191600;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0;
+  box-shadow: 0 6px 16px -6px rgba(254, 229, 0, 0.8);
+}
+
+.kakaoButton:hover {
+  background: #F7DC00;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px -8px rgba(0, 0, 0, 0.2);
+}
+
+.kakaoButton svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .kakaoButton {
+    width: 100%;
+  }
+}
+
+
 .section {
   padding: 6rem 0;
   border-bottom: 1px solid var(--border);
