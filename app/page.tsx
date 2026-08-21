@@ -7,6 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ProfileSection } from "@/components/ProfileSection";
 import { DifferenceSection } from "@/components/DifferenceSection";
 import { MethodologySection } from "@/components/MethodologySection";
+import { CareerSection, CareerClosing } from "@/components/CareerSection";
 import { ScheduleTable } from "@/components/ScheduleTable";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
 
@@ -52,6 +53,9 @@ export default function Home() {
       {/* Methodology Section - 코치 소개 스타일 (이미지 우측) */}
       <MethodologySection />
 
+      {/* Career Section - 강사 소개 (다크 톤) */}
+      <CareerSection />
+
       <div className="container">
 
         {/* Schedule Section */}
@@ -60,6 +64,13 @@ export default function Home() {
             <ScheduleTable />
           </Section>
         </ScrollReveal>
+
+      </div>
+
+      {/* Career Closing - 클로징 문장 다크 배너 (상담 CTA는 아래 ContactSection이 담당) */}
+      <CareerClosing />
+
+      <div className="container">
 
         {/* Contact Section */}
         <ScrollReveal>

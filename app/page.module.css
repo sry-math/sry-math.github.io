@@ -737,3 +737,197 @@
     display: none;
   }
 }
+
+/* ===== Career Section (강사 소개 · 다크 톤) ===== */
+.careerSection {
+  background: #0f172a;
+  color: #fff;
+  padding: 7rem 0;
+}
+
+.careerInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.careerEyebrow {
+  display: inline-block;
+  color: #93c5fd;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.careerTitle {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin: 0 0 2.5rem;
+  word-break: keep-all;
+}
+
+.careerDeclare {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--accent);
+  margin-bottom: 2.5rem;
+}
+
+.careerDeclareLine {
+  margin: 0;
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.55;
+  color: #f1f5f9;
+  word-break: keep-all;
+}
+
+.careerLeadGroup {
+  max-width: 760px;
+  margin-bottom: 4rem;
+}
+
+.careerLead {
+  margin: 0 0 0.6rem;
+  font-size: 1.08rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.78);
+  word-break: keep-all;
+}
+
+.careerLead:last-child {
+  margin-bottom: 0;
+}
+
+.careerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.careerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.careerColBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.careerColTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(147, 197, 253, 0.28);
+}
+
+.careerList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.careerItem {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.86);
+  word-break: keep-all;
+}
+
+.careerItem::before {
+  content: "—";
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-right: 0.7rem;
+}
+
+/* 클로징 문장 전용 다크 배너 (시간표와 상담/문의 사이의 풀블리드 구간) */
+.careerClosingBand {
+  padding: 4rem 1.5rem 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.careerClosingText {
+  max-width: 760px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.28);
+  padding: 3.25rem 2.5rem;
+  text-align: center;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+  font-size: clamp(1.4rem, 3.2vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+
+@media (max-width: 768px) {
+  .careerSection {
+    padding: 4.5rem 0;
+  }
+  .careerInner {
+    padding: 0 1.5rem;
+  }
+  .careerTitle {
+    margin-bottom: 2rem;
+  }
+  .careerDeclare {
+    padding-left: 1rem;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+  }
+  .careerDeclareLine {
+    font-size: 1.02rem;
+  }
+  .careerLeadGroup {
+    margin-bottom: 2.75rem;
+  }
+  .careerLead {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  .careerGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 2.25rem;
+  }
+  .careerCol {
+    gap: 2rem;
+  }
+  .careerItem {
+    font-size: 0.98rem;
+  }
+  .careerClosingBand {
+    padding: 2.5rem 1.25rem 3.5rem;
+  }
+  .careerClosingText {
+    padding: 2.25rem 1.5rem;
+    border-radius: 18px;
+  }
+}
