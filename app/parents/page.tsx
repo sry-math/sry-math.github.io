@@ -20,7 +20,7 @@ export default function ParentsPage() {
                 <ul className={styles.list}>
                     <li className={styles.listItem}>2018년부터 9년간 중·고등 수학 지도 — 그중 고등 수학이 가장 오래 쌓아온 전문 분야입니다.</li>
                     <li className={styles.listItem}>수학 정교사 자격증 보유</li>
-                    <li className={styles.listItem}>김현정수학 구주이배송파본원 · 오르고수학 · EPSILON MATH LAB 운영 · 이룸학원 · 메타수학</li>
+                    <li className={styles.listItem}>김현정수학 · 구주이배송파본원 · 오르고수학 · EPSILON MATH LAB 운영 · 이룸학원 · 메타수학</li>
                     <li className={styles.listItem}>충청남도 수학·과학 경시대회 은상, 성균관대·고려대·충남대 수학경시대회 입상, 수학 영재교육원 수료</li>
                 </ul>
             </Section>
