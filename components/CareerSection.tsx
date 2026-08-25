@@ -67,6 +67,12 @@ const REVEAL = {
     transition: { duration: 0.8, ease: "easeOut" },
 } as const;
 
+/**
+ * 다크 톤(메인)과 라이트 톤(학부모용 안내)을 같은 구성으로 재사용하기 위한 변형.
+ * light는 배경을 상속하고 색상만 라이트 페이지 팔레트로 바꾼다.
+ */
+export type CareerVariant = "dark" | "light";
+
 const CareerColumn = ({ groups }: { groups: CareerGroup[] }) => (
     <div className={styles.careerCol}>
         {groups.map((group) => (
@@ -84,9 +90,18 @@ const CareerColumn = ({ groups }: { groups: CareerGroup[] }) => (
     </div>
 );
 
-export const CareerSection = () => {
+export const CareerSection = ({
+    id = "career",
+    variant = "dark",
+}: {
+    id?: string;
+    variant?: CareerVariant;
+} = {}) => {
     return (
-        <section id="career" className={styles.careerSection}>
+        <section
+            id={id}
+            className={`${styles.careerSection} ${variant === "light" ? styles.careerSectionLight : ""}`}
+        >
             <div className={styles.careerInner}>
                 {/* ① 헤드 */}
                 <motion.div {...REVEAL}>

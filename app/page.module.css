@@ -860,6 +860,42 @@
   margin-right: 0.7rem;
 }
 
+/* ===== Career Section · 라이트 변형 (학부모용 안내 등 밝은 배경 페이지) =====
+   구성은 다크 톤과 동일하게 두고 배경/텍스트 색만 라이트 팔레트로 교체한다. */
+.careerSectionLight {
+  background: transparent;
+  color: var(--foreground);
+}
+
+.careerSectionLight .careerEyebrow {
+  color: var(--accent);
+}
+
+.careerSectionLight .careerTitle {
+  color: var(--primary);
+}
+
+.careerSectionLight .careerDeclareLine {
+  color: var(--primary);
+}
+
+.careerSectionLight .careerLead {
+  color: var(--secondary);
+}
+
+.careerSectionLight .careerGrid {
+  border-top-color: var(--border);
+}
+
+.careerSectionLight .careerColTitle {
+  color: var(--accent);
+  border-bottom-color: rgba(37, 99, 235, 0.28);
+}
+
+.careerSectionLight .careerItem {
+  color: var(--primary-hover);
+}
+
 /* 클로징 문장 전용 다크 배너 (시간표와 상담/문의 사이의 풀블리드 구간) */
 .careerClosingBand {
   padding: 4rem 1.5rem 5rem;
