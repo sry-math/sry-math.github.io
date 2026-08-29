@@ -7,7 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { ProfileSection } from "@/components/ProfileSection";
 import { DifferenceSection } from "@/components/DifferenceSection";
 import { MethodologySection } from "@/components/MethodologySection";
-import { CareerSection, CareerClosing } from "@/components/CareerSection";
+import { CareerSection } from "@/components/CareerSection";
 import { ScheduleTable } from "@/components/ScheduleTable";
 import { YouTubeVideo } from "@/components/YouTubeVideo";
 
@@ -64,13 +64,6 @@ export default function Home() {
             <ScheduleTable />
           </Section>
         </ScrollReveal>
-
-      </div>
-
-      {/* Career Closing - 클로징 문장 다크 배너 (상담 CTA는 아래 ContactSection이 담당) */}
-      <CareerClosing />
-
-      <div className="container">
 
         {/* Contact Section */}
         <ScrollReveal>

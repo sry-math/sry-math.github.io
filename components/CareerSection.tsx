@@ -155,17 +155,3 @@ export const CareerSection = ({
         </section>
     );
 };
-
-/**
- * CareerSection의 클로징 문장을 독립 다크 배너로 분리한 컴포넌트.
- * 바로 아래 ContactSection이 상담 CTA 역할을 하므로 버튼은 두지 않는다.
- */
-export const CareerClosing = () => {
-    return (
-        <section className={styles.careerClosingBand}>
-            <motion.p className={styles.careerClosingText} {...REVEAL}>
-                고등 내신과 수능, 전문가에게 맡기시겠습니까?
-            </motion.p>
-        </section>
-    );
-};
